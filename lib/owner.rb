@@ -75,6 +75,7 @@ class Owner
     b.each do |cat|
       j += 1 
     end 
+    
   end 
     
   
