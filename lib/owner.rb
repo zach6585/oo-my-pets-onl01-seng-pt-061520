@@ -75,7 +75,7 @@ class Owner
     b.each do |cat|
       j += 1 
     end 
-    puts "I have #{i} dog(s), and #{j} cat(s)."
+    "I have #{i} dog(s), and #{j} cat(s)."
   end 
     
   
