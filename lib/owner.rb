@@ -73,7 +73,7 @@ class Owner
     end 
     b = Cat.all.select{|cat| cat.owner == self}
     b.each do |cat|
-      puts cat 
+      j += 1 
     end 
   end 
     
