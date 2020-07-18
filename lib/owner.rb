@@ -65,6 +65,16 @@ class Owner
   end 
   
   def list_pets 
+    a = Dog.all.select{|dog| dog.owner == self}
+    a.each do |dog|
+      dog.mood = "nervous"
+      dog.owner = nil
+    end 
+    b = Cat.all.select{|cat| cat.owner == self}
+    b.each do |cat|
+      cat.mood = "nervous"
+      cat.owner = nil
+    end 
   end 
     
   
