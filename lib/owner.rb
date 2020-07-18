@@ -69,7 +69,7 @@ class Owner
     j = 0 
     a = Dog.all.select{|dog| dog.owner == self}
     a.each do |dog|
-      puts dog 
+      i += 1 
     end 
     b = Cat.all.select{|cat| cat.owner == self}
     b.each do |cat|
