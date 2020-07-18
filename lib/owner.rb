@@ -65,6 +65,8 @@ class Owner
   end 
   
   def list_pets 
+    i = 0 
+    j = 0 
     a = Dog.all.select{|dog| dog.owner == self}
     a.each do |dog|
       puts dog 
